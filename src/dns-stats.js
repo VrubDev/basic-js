@@ -31,7 +31,6 @@ function getDNSStats(domains) {
     let currentKey = '';
 
     for (const part of parts) {
-
       currentKey = currentKey + '.' + part;
       stats[currentKey] = (stats[currentKey] || 0) + 1;
     }
